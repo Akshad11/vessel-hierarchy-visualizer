@@ -136,6 +136,6 @@ Fleet management dashboards
 Industrial hierarchy visualization
 Enterprise data exploration tools
 
-### 8. 🏗️License
+### 8. License
 MIT License
 Copyright (c) 2026
