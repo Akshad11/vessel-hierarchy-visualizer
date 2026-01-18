@@ -30,3 +30,39 @@ Application Features List:
 6. Data Management
    - Multi-Dataset Support: Dropdown to switch between various mock datasets (Simple, Moderate, Complex, Very Complex, Ultra Complex).
    - In-memory State: Local state management for immediate feedback during interactions.
+
+Folder Structure:
+
+3S project/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # React components
+│   │   ├── UI/             # Shared UI components
+│   │   │   ├── Breadcrumbs.tsx
+│   │   │   └── Controls.tsx
+│   │   └── VesselTree/     # Specific tree visualization components
+│   │       ├── Link.tsx
+│   │       └── TreeNode.tsx
+│   ├── data/               # Mock data and data management
+│   │   └── mockData.ts
+│   ├── hooks/              # Custom React hooks
+│   │   └── useZoomPan.ts
+│   ├── utils/              # Helper functions
+│   │   └── treeUtils.ts
+│   ├── App.css             # Component-level styles (if any)
+│   ├── App.tsx             # Main application component
+│   ├── constants.ts        # Global constants and config (Styles, Dimensions)
+│   ├── index.css           # Global styles (Tailwind imports)
+│   ├── main.tsx            # Application entry point
+│   └── types.ts            # TypeScript type definitions
+├── .env.local              # Local environment variables
+├── .gitignore              # Git ignore rules
+├── eslint.config.js        # Linting configuration
+├── features.txt            # Feature list
+├── index.html              # HTML entry point
+├── package.json            # Project dependencies and scripts
+├── package-lock.json       # Dependency lock file
+├── tsconfig.json           # TypeScript configuration
+├── tsconfig.app.json       # App-specific TS config
+├── tsconfig.node.json      # Node-specific TS config
+└── vite.config.ts          # Vite build configuration

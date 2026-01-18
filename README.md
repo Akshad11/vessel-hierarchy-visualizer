@@ -122,12 +122,25 @@ npm run build
 ### 6. Project Structure
 ```bash
 src/
- ├─ components/        # Tree nodes, canvas, controls
- ├─ data/              # Mock datasets
- ├─ hooks/             # Custom hooks
- ├─ styles/            # Styling files
- ├─ App.tsx
- └─ main.tsx
+  ├── components/         # React components
+  │   ├── UI/             # Shared UI components
+  │   │   ├── Breadcrumbs.tsx
+  │   │   └── Controls.tsx
+  │   └── VesselTree/     # Specific tree visualization components
+  │       ├── Link.tsx
+  │       └── TreeNode.tsx
+  ├── data/               # Mock data and data management
+  │   └── mockData.ts
+  ├── hooks/              # Custom React hooks
+  │   └── useZoomPan.ts
+  ├── utils/              # Helper functions
+  │   └── treeUtils.ts
+  ├── App.css             # Component-level styles (if any)
+  ├── App.tsx             # Main application component
+  ├── constants.ts        # Global constants and config (Styles, Dimensions)
+  ├── index.css           # Global styles (Tailwind imports)
+  ├── main.tsx            # Application entry point
+  └── types.ts            # TypeScript type definitions
 
 ```
 ### 7. Use Cases
