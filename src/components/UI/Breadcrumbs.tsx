@@ -12,7 +12,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, onNavigate }) => {
 
   return (
     <div className="absolute top-0 left-0 w-full bg-white/90 backdrop-blur-sm border-b border-slate-200 px-6 py-3 z-20 shadow-sm flex items-center space-x-2 overflow-x-auto">
-      <div className="flex-shrink-0 text-slate-400 mr-2">
+      <div className="shrink-0 text-slate-400 mr-2">
         <Anchor size={18} />
       </div>
       {items.map((item, index) => {
@@ -28,7 +28,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, onNavigate }) => {
             >
               {item.name}
             </button>
-            {!isLast && <ChevronRight size={14} className="text-slate-300 flex-shrink-0" />}
+            {!isLast && <ChevronRight size={14} className="text-slate-300 shrink-0" />}
           </React.Fragment>
         );
       })}

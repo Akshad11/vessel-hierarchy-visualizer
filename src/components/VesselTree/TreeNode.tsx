@@ -172,7 +172,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({
         }}
       >
         {/* Label Content */}
-        <div className="flex flex-col overflow-hidden mr-2 flex-grow text-left pointer-events-none">
+        <div className="flex flex-col overflow-hidden mr-2 grow text-left pointer-events-none">
           <span className={`text-sm font-semibold truncate leading-snug ${variant === 'filled' ? 'drop-shadow-md' : ''}`}>
             {data.name}
           </span>
@@ -184,7 +184,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({
         </div>
 
         {/* Expand/Collapse Button */}
-        <div className="flex-shrink-0 w-5 h-5" onMouseDown={(e) => e.stopPropagation()}>
+        <div className="shrink-0 w-5 h-5" onMouseDown={(e) => e.stopPropagation()}>
           {hasChildren && (
             <button
               onClick={handleToggle}

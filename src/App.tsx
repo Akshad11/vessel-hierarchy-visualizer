@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { datasets, datasetOptions } from './data/mockData';
 import { computeTreeLayout, buildNodeMap, findMatches, getBreadcrumbs, moveNodeInTree } from './utils/treeUtils';
 import { useZoomPan } from './hooks/useZoomPan';
