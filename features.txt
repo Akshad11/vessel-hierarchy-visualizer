@@ -1,0 +1,32 @@
+Application Features List:
+
+1. Hierarchical Data Visualization
+   - Visualizes complex vessel data in a structured, multi-level tree diagram.
+   - Levels: System -> Equipment Type -> Equipment -> Assembly -> Component.
+
+2. Interactive Canvas
+   - Infinite Panning: Move around the tree freely.
+   - Smooth Zooming: Zoom in/out using mouse wheel or UI controls.
+   - Fit-to-View/Reset: One-click controls to reset the view to the default position.
+
+3. Node Interaction & Management
+   - Expand/Collapse: Toggle visibility of child nodes.
+   - Accordion Mode: Optional mode to automatically collapse sibling branches when opening a new one.
+   - Selection: Click to select nodes and highlight their specific path.
+   - Drag & Drop: Reorganize the tree structure by dragging nodes to new parents.
+
+4. Search & Navigation
+   - Global Search: Real-time filtering by node name.
+   - Smart Highlighting: Highlights matching nodes and dims unrelated ones.
+   - Auto-Correction: Automatically expands the tree to reveal search results.
+   - Breadcrumbs: Top-bar navigation showing the path to the currently selected node.
+
+5. Visual System & Styling
+   - Distinct Node Types: Color-coded styling for System (Blue), Equipment Type (Red), Equipment (Purple), Assembly (Grey), and Component (Green).
+   - State Variants: Visual distinction between Active (Solid colors) and Inactive (Light/Opacity reduced) nodes based on selection.
+   - Draft Status: Visual indicator for nodes marked as 'Draft'.
+   - Dynamic Connections: Curved SVG lines connecting parent and child nodes.
+
+6. Data Management
+   - Multi-Dataset Support: Dropdown to switch between various mock datasets (Simple, Moderate, Complex, Very Complex, Ultra Complex).
+   - In-memory State: Local state management for immediate feedback during interactions.

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.canvas-bg {
+  width: 2000px;
+  height: 1200px;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 16px 16px;
+}

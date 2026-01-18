@@ -1,0 +1,21 @@
+.node-EQUIPMENT_TYPE {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.node-EQUIPMENT {
+  color: #2563eb;
+}
+
+.node-ASSEMBLY {
+  color: #059669;
+}
+
+.node-COMPONENT {
+  color: #6b7280;
+}
+
+.node-EQUIPMENT:hover,
+.node-ASSEMBLY:hover {
+  background: #f3f4f6;
+}
